@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Hub - Unblocked</title>
+    <!-- The Proxy Scripts -->
+    <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+    <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
+    
+    <style>
+        body {
+            margin: 0;
+            background-color: #0b0b0b;
+            color: white;
+            font-family: sans-serif;
+            overflow: hidden; /* Stops double scrolling */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        nav {
+            background: #1a1a1a;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #333;
+        }
+        .proxy-container {
+            flex-grow: 1;
+            width: 100%;
+            border: none;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .status-tag {
+            background: #00ff88;
+            color: black;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div><strong>Aniwaves</strong> Mirror</div>
+    <div class="status-tag">PROXY ACTIVE</div>
+</nav>
+
+<!-- This is the special proxy-enabled iframe -->
+<div class="proxy-container">
+    <iframe 
+        is="x-frame-bypass" 
+        src="https://aniwaves.ru/watch/bleach-80678/ep-1"
+        sandbox="allow-forms allow-modals allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+    ></iframe>
+</div>
+
+</body>
+</html>
